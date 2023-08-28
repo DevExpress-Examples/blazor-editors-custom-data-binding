@@ -1,0 +1,24 @@
+﻿@page "/TagBox"
+
+@using CustomData.Data
+@using DevExtreme.AspNet.Data
+@using DevExtreme.AspNet.Data.ResponseModel
+@using System.Threading
+@using System.Threading.Tasks
+@using System.Net.Http
+@using System.Text.Json
+
+<DxTagBox TData="@WebApiLookup" 
+          TValue="string"
+          CustomData="@LoadCustomData"
+          TextFieldName="Text" style="width: 400px;">
+</DxTagBox>
+
+@code {
+    string Value { get; set; }
+    [Inject] protected HttpClient Client { get; set; }
+
+    protected Task<LoadResult> LoadCustomData(DataSourceLoadOptionsBase options, CancellationToken cancellationToken) {
+        return CustomDataHelper.LoadCustomData(Client, options, cancellationToken);
+    }
+}
