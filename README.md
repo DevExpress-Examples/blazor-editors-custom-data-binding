@@ -6,9 +6,12 @@ This example demonstrates how to bind DevExpress Blazor [ListBox](https://docs.d
 
 ## Overview
 
-To bind an editor to data stored on a remote service and loaded through a Web Api, complete the following steps:
+To bind an editor to data stored on a remote service and loaded through a Web API, complete the following steps:
 
-1. Add a reference to the [DevExtreme.AspNet.Data](https://github.com/DevExpress/DevExtreme.AspNet.Data/blob/master/README.md) library to your project.
+1. Add a reference to the [DevExtreme.AspNet.Data](https://github.com/DevExpress/DevExtreme.AspNet.Data/blob/master/README.md) library to your project and add the following namespaces to the corresponding files:
+
+    * @using DevExtreme.AspNet.Data
+    * @using DevExtreme.AspNet.Data.ResponseModel
 
 2. Assign the data type to a component's `T` parameter.
 
