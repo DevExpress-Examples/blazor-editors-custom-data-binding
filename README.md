@@ -10,7 +10,7 @@ This example binds DevExpress Blazor [ListBox](https://docs.devexpress.com/Blazo
 
 ## Overview
 
-To bind an editor to data available via a Web API service, complete the following steps:
+To bind an editor to data from a Web API service, complete the following steps:
 
 1. Reference the [DevExtreme.AspNet.Data](https://github.com/DevExpress/DevExtreme.AspNet.Data/blob/master/README.md) library in your project. Add the following directives to files where you will write data loading code:
 
