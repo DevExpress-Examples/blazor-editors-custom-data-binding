@@ -4,25 +4,25 @@
 <!-- default badges end -->
 # Data Editors for Blazor - Custom data binding
 
-This example demonstrates how to bind DevExpress Blazor [ListBox](https://docs.devexpress.com/Blazor/DevExpress.Blazor.DxListBox-2), [ComboBox](https://docs.devexpress.com/Blazor/DevExpress.Blazor.DxComboBox-2), and [TagBox](https://docs.devexpress.com/Blazor/DevExpress.Blazor.DxTagBox-2) to a remote Web API service and use the `CustomData` property to implement custom data load logic.
+This example binds DevExpress Blazor [ListBox](https://docs.devexpress.com/Blazor/DevExpress.Blazor.DxListBox-2), [ComboBox](https://docs.devexpress.com/Blazor/DevExpress.Blazor.DxComboBox-2), and [TagBox](https://docs.devexpress.com/Blazor/DevExpress.Blazor.DxTagBox-2) to a remote Web API service and uses the `CustomData` property to implement custom data load logic.
 
 ![Data Editors - Custom data binding](CustomData.gif)
 
 ## Overview
 
-To bind an editor to data stored on a remote service and loaded through a Web API, complete the following steps:
+To bind an editor to data available via a Web API service, complete the following steps:
 
-1. Add a reference to the [DevExtreme.AspNet.Data](https://github.com/DevExpress/DevExtreme.AspNet.Data/blob/master/README.md) library to your project and add the following namespaces to the corresponding files:
+1. Reference the [DevExtreme.AspNet.Data](https://github.com/DevExpress/DevExtreme.AspNet.Data/blob/master/README.md) library in your project. Add the following directives to files where you will write data loading code:
 
     * @using DevExtreme.AspNet.Data
     * @using DevExtreme.AspNet.Data.ResponseModel
 
-2. Use a component's `CustomData` property to implement an ansynchronous function. This function returns a [Task\<LoadResult>](https://devexpress.github.io/DevExtreme.AspNet.Data/net/api/DevExtreme.AspNet.Data.ResponseModel.LoadResult.html) object and accepts the following parameteres:
+2. Use a component's `CustomData` property to implement an ansynchronous function. This function returns a [Task\<LoadResult>](https://devexpress.github.io/DevExtreme.AspNet.Data/net/api/DevExtreme.AspNet.Data.ResponseModel.LoadResult.html) object and accepts the following parameters:
 
-    * The [DataSourceLoadOptionBase](https://devexpress.github.io/DevExtreme.AspNet.Data/net/api/DevExtreme.AspNet.Data.DataSourceLoadOptionsBase.html) object.
-    * The [CalcellationToken](https://learn.microsoft.com/en-us/dotnet/api/system.threading.cancellationtoken?view=net-7.0) object.
+    * A [DataSourceLoadOptionBase](https://devexpress.github.io/DevExtreme.AspNet.Data/net/api/DevExtreme.AspNet.Data.DataSourceLoadOptionsBase.html) object.
+    * A [CancellationToken](https://learn.microsoft.com/en-us/dotnet/api/system.threading.cancellationtoken?view=net-7.0) object.
 
-3. On a remote service, implement an [API controller](https://docs.devexpress.com/AspNetCore/401020/devextreme-based-controls/concepts/bind-controls-to-data/api-controllers) and create a `LoadResult` object based on load options.
+3. In the remote service, implement an [API controller](https://docs.devexpress.com/AspNetCore/401020/devextreme-based-controls/concepts/bind-controls-to-data/api-controllers) and create a `LoadResult` object based on load options.
 
 
 ## Files to Review
