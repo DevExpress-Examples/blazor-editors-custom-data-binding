@@ -1,5 +1,4 @@
 ﻿using DevExtreme.AspNet.Data;
-using DevExtreme.AspNet.Mvc;
 using Microsoft.AspNetCore.Mvc;
 using CustomData.Data.Northwind;
 
@@ -9,7 +8,7 @@ namespace CustomData.Data {
         NorthwindContext _nwind;
 
         [HttpGet]
-        public object CustomersLookup(DataSourceLoadOptions loadOptions) {
+        public object CustomersLookup(DataSourceLoadOptionsBase loadOptions) {
             var lookup = from i in _nwind.Customers
                          let text = i.CompanyName + " (" + i.Country + ")"
                          orderby i.CompanyName
