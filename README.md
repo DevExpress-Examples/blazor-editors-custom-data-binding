@@ -39,18 +39,18 @@ To bind an editor to data from a Web API service, complete the following steps:
 
 ### ListBox
 
-- [Bind to Data](https://docs.devexpress.com/Blazor/DevExpress.Blazor.DxListBox-2#bind-to-data)
-- [CustomData](https://docs.devexpress.com/Blazor/DevExpress.Blazor.DxListBox-2.CustomData)
+- [Bind to Data](https://docs.devexpress.com/Blazor/DevExpress.Blazor.DxListBox-2?v=23.1#bind-to-data)
+- [CustomData](https://docs.devexpress.com/Blazor/DevExpress.Blazor.DxListBox-2.CustomData?v=23.1)
 
 ### ComboBox
 
-- [Bind to Data](https://docs.devexpress.com/Blazor/DevExpress.Blazor.DxComboBox-2#bind-to-data)
-- [CustomData](https://docs.devexpress.com/Blazor/DevExpress.Blazor.DxComboBox-2.CustomData)
+- [Bind to Data](https://docs.devexpress.com/Blazor/DevExpress.Blazor.DxComboBox-2?v=23.1#bind-to-data)
+- [CustomData](https://docs.devexpress.com/Blazor/DevExpress.Blazor.DxComboBox-2.CustomData?v=23.1)
 
 ### TagBox
 
-- [Bind to Data](https://docs.devexpress.com/Blazor/DevExpress.Blazor.DxTagBox-2#bind-to-data)
-- [CustomData](https://docs.devexpress.com/Blazor/DevExpress.Blazor.DxTagBox-2.CustomData)
+- [Bind to Data](https://docs.devexpress.com/Blazor/DevExpress.Blazor.DxTagBox-2?v=23.1#bind-to-data)
+- [CustomData](https://docs.devexpress.com/Blazor/DevExpress.Blazor.DxTagBox-2.CustomData?v=23.1)
 <!-- feedback -->
 ## Does this example address your development requirements/objectives?
 
@@ -58,3 +58,4 @@ To bind an editor to data from a Web API service, complete the following steps:
 
 (you will be redirected to DevExpress.com to submit your response)
 <!-- feedback end -->
+
