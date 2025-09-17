@@ -16,9 +16,6 @@ builder.Services.AddDbContextFactory<NorthwindContext>((sp, options) => {
     var dbPath = Path.Combine(env.ContentRootPath, "Northwind.db");
     options.UseSqlite("Data Source=" + dbPath);
 });
-builder.Services.Configure<DevExpress.Blazor.Configuration.GlobalOptions>(options => {
-    options.BootstrapVersion = DevExpress.Blazor.BootstrapVersion.v5;
-});
 builder.Services.AddHttpClient<HttpClient>(ConfigureHttpClient);
 builder.Services.AddScoped<HttpClient>(serviceProvider => serviceProvider.GetService<IHttpClientFactory>().CreateClient());
 static void ConfigureHttpClient(HttpClient httpClient) {
